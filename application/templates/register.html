@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tela de Cadastro</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <div class="container">
+
+    <!-- Área de Cadastro -->
+    <div class="login-box">
+      <h1>Crie sua conta</h1>
+      <p>Preencha os dados abaixo para começar a jogar.</p>
+
+      <form method="POST" action="/register">
+        <label for="username">Nome de usuário</label>
+        <input type="text" id="username" name="username" placeholder="Escolha um nome de usuário" required>
+
+        <label for="password">Senha</label>
+        <input type="password" id="password" name="password" placeholder="Crie uma senha" required>
+
+
+        <button type="submit" class="btn-login">Cadastrar</button>
+      </form>
+
+      <div class="options">
+        <p>Já tem uma conta? <a href="/login" class="cadastro-link">Entrar</a></p>
+      </div>
+    </div>
+
+    <!-- Área de informações extras -->
+    <div class="leaderboard">
+      <h2>Por que se cadastrar?</h2>
+      <ul>
+        <li>🎯 Salve seu progresso</li>
+        <li>🏆 Participe do ranking</li>
+        <li>⚡ Jogue em diferentes modos</li>
+        <li>🔒 Segurança garantida</li>
+      </ul>
+    </div>
+
+  </div>
+</body>
+</html>

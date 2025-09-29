@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tela de Login</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <script src="script.js"></script>
+    <div class="container">
+
+    <!-- Área de Login -->
+    <div class="login-box">
+      <h1>Bem-vindo de volta</h1>
+      <p>Faça login para continuar sua jornada.</p>
+
+      <form method="POST" action="/login">
+        <label for="username">Nome de usuário</label>
+        <input type="text" id="username" name="username" placeholder="Seu nome de usuário" required>
+
+        <label for="password">Senha</label>
+        <input type="password" id="password" name="password" placeholder="Sua senha" required>
+
+        <button type="submit" class="btn-login">Entrar</button>
+      </form>
+      
+      <div class="options">
+        <p>Não tem uma conta? <a href="/register" class="cadastro-link">Cadastrar</a></p>
+      </div>
+    </div>
+    </div>
+
+    <!-- Área Leaderboard -->
+    <div class="leaderboard">
+      <h2>Leaderboard</h2>
+      <ul>
+        <li>
+          <span class="pos">1</span>
+          <span class="nome">Jogador 1</span>
+          <span class="pontos">0 Pontos</span>
+        </li>
+        <li>
+          <span class="pos">2</span>
+          <span class="nome">Jogador 2</span>
+          <span class="pontos">0 Pontos</span>
+        </li>
+        <li>
+          <span class="pos">3</span>
+          <span class="nome">Jogador 3</span>
+          <span class="pontos">0 Pontos</span>
+        </li>
+        <li>
+          <span class="pos">4</span>
+          <span class="nome">Jogador 4</span>
+          <span class="pontos">0 Pontos</span>
+        </li>
+        <li>
+          <span class="pos">5</span>
+          <span class="nome">Jogador 5</span>
+          <span class="pontos">0 Pontos</span>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</body>
+</html>

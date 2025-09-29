@@ -1,0 +1,168 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #0f0c0c;
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container geral */
+.container {
+  display: flex;
+  gap: 40px;
+  background: #1a0f0f;
+  padding: 40px;
+  border-radius: 12px;
+}
+
+/* Box de Login */
+.login-box {
+  width: 350px;
+}
+
+.login-box h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.login-box p {
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: #bbb;
+}
+
+form label {
+  display: block;
+  margin: 10px 0 5px;
+  font-size: 14px;
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  background: #2a1f1f;
+  color: #fff;
+}
+
+.btn-login {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10px;
+  background: #ff4500;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn-login:hover {
+  background: #e03e00;
+}
+
+.btn-register {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10px;
+  background: #ff4500;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn-register:hover {
+  background: #e03e00;
+}
+
+.options {
+  margin-top: 15px;
+  font-size: 13px;
+}
+
+.options a {
+  color: #ff4500;
+  text-decoration: none;
+}
+
+.cadastro-link {
+  font-weight: bold;
+}
+
+/* Leaderboard */
+.leaderboard {
+  width: 250px;
+  background: #2a1f1f;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.leaderboard h2 {
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.leaderboard ul {
+  list-style: none;
+}
+
+.leaderboard li {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  padding: 8px;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+.leaderboard li:hover {
+  background: rgba(255, 69, 0, 0.2);
+}
+
+.pos {
+  font-weight: bold;
+  color: #ff4500;
+}
+
+.nome {
+  flex: 1;
+  margin-left: 10px;
+}
+
+.pontos {
+  font-size: 14px;
+  color: #bbb;
+}
+
+/* Estilo para a tela de jogo */
+.feedback {
+  margin-top: 20px;
+  background-color: #1e1e1e;
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+}
+.feedback p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #ffb347;
+}
+#message {
+  font-weight: bold;
+  font-size: 16px;
+}

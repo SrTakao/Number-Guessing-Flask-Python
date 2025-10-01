@@ -14,22 +14,29 @@
       <h1>Number Guessing 🎯</h1>
       <p>Tente adivinhar o número secreto!</p>
 
-      <form id="guess-form" method="POST" action="/play">
+      <form id="guess-form" method="POST">
         <label for="guess">Digite seu palpite:</label>
         <input type="number" id="guess" name="guess" placeholder="Ex: 42" required>
-
+        <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+        
         <button type="submit" class="btn-login">Enviar</button>
       </form>
 
       <!-- Área de feedback -->
       <div class="feedback">
         <p id="message">💡 Faça sua primeira tentativa!</p>
-        <p>Tentativas restantes: <span id="attempts">10</span></p>
+        <p>Tentativas restantes: <span id="attempts">5</span></p>
+        {% if palpite == 0 %}
+            
+        {% else %}
+            <p>{{ resposta }}</p>
+        {% endif %}        
+
       </div>
 
       <!-- Opções extras -->
       <div class="options">
-        <a href="index.html" class="cadastro-link">Sair</a>
+        <a href="/logout" class="cadastro-link">Sair</a>
       </div>
     </div>
 
